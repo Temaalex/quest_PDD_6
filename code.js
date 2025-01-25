@@ -66,7 +66,7 @@ function wrongAnswer(){
 	localStorage.setItem('check'+quiz[index].id, 'false');	
 	timer()
 	blockBtn()
-	setTimeout(blockOut, 1000) //30000
+	setTimeout(blockOut, 30000) //30000
 }
 
 function timer(){
