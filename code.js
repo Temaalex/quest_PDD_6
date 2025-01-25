@@ -66,12 +66,12 @@ function wrongAnswer(){
 	localStorage.setItem('check'+quiz[index].id, 'false');	
 	timer()
 	blockBtn()
-	setTimeout(blockOut, 60000)
+	setTimeout(blockOut, 1000) //30000
 }
 
 function timer(){
 	let timer;
-	let x=60;
+	let x=30;
 	countdown();
 	function countdown(){
 	document.querySelector('.head__content').innerText = "Ответ неправельный!"+'\n'+"Повторная попытка через "+x+" секунд";
