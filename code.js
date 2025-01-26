@@ -58,7 +58,7 @@ function blockOut(){
 
 function rightAnswer(){
 	blockBtn()
-	document.querySelector('.head__content').innerText = "Ответ правельный!"+'\n'+"Вот элемент шифра:"+'\n'+quiz[index].elCode
+	document.querySelector('.head__content').innerText = "Ответ правильный!"+'\n'+"Вот элемент шифра:"+'\n'+quiz[index].elCode
 }
 
 function wrongAnswer(){
@@ -74,7 +74,7 @@ function timer(){
 	let x=30;
 	countdown();
 	function countdown(){
-	document.querySelector('.head__content').innerText = "Ответ неправельный!"+'\n'+"Повторная попытка через "+x+" секунд";
+	document.querySelector('.head__content').innerText = "Ответ неправильный!"+'\n'+"Повторная попытка через "+x+" секунд";
 	x--
 	if (x<0){
 		clearTimeout(timer);
